@@ -1,0 +1,329 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+p {
+  font-size: 1.1em;
+  line-height: 1.2em;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  padding: 3px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+nav img {
+  width: 200px;
+  height: auto;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  font-weight: 600;
+}
+nav ul :hover {
+  transform: translateY(-3px);
+  transition: all 1s;
+}
+nav ul li a {
+  text-decoration: none;
+  color: rgb(15, 15, 15);
+  font-size: 1, 1em;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+nav ul li img {
+  width: 40px;
+  padding-right: 1px;
+  padding-left: 1px;
+}
+
+header img {
+  width: 100%;
+}
+
+.centered-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(500%);
+  border: none;
+  background-color: rgb(15, 15, 15);
+  border-radius: 3px;
+  padding: 1px 5px;
+}
+
+.button-heroe {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+main section {
+  padding: 3px 30px;
+}
+
+h1,
+h2,
+h3 {
+  color: rgb(15, 15, 15);
+  margin: 10px 0;
+  font-weight: 300;
+  font-size: 1, 4em;
+}
+
+p {
+  font-size: 1, 1em;
+  line-height: 1, 2em;
+  color: black;
+  font-weight: 500;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card-title {
+  font-size: 1, 1em;
+  color: black;
+}
+
+.card {
+  border-color: rgb(254, 251, 251);
+}
+.card :hover {
+  transform: translate(4px, -4px);
+}
+
+.row {
+  margin: 10px;
+}
+
+.button-home {
+  border: none;
+  padding: 6px;
+  color: orange;
+  background-color: black;
+  border-radius: 3px;
+  width: 10px auto;
+  margin: 10px;
+}
+
+.button-home:hover {
+  cursor: pointer;
+  background-color: gray;
+}
+
+footer {
+  background-color: black;
+  padding: 50px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+footer div ul li a {
+  text-decoration: none;
+  color: rgb(254, 251, 251);
+}
+
+.footer {
+  text-decoration: none;
+  color: rgb(254, 251, 251);
+}
+
+.footer-estilo {
+  list-style: none;
+}
+
+.logomask {
+  width: 200px;
+  height: auto;
+}
+
+.footer-redes {
+  width: 60px;
+  margin: 3px;
+}
+
+.footer-micuenta {
+  line-height: 2.2;
+}
+
+.whatsapp {
+  position: fixed;
+  right: 80px;
+  bottom: 100px;
+}
+
+.whatsapp {
+  width: 60px;
+  height: 60px;
+}
+
+.viplist {
+  background: linear-gradient(to top, rgb(219, 183, 121), white);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 5px;
+  margin: 10px;
+}
+.viplist button {
+  border: none;
+  padding: 10px;
+  color: orange;
+  background-color: black;
+  width: 10px auto;
+  margin: 10px;
+  border-radius: 3px;
+}
+.viplist button:hover {
+  cursor: pointer;
+  background-color: gray;
+}
+.viplist label {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  line-height: 1, 2em;
+}
+.viplist input {
+  padding: 10px;
+  line-height: 1, 2em;
+  border-radius: 3px;
+  border: 1px;
+}
+
+.header-pages {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  background-color: black;
+  width: 100%;
+  height: 130px;
+  font-size: 1, 0em;
+}
+
+.header-pages h1, h3 {
+  color: white;
+  padding: 5px 30px;
+}
+
+.header-pages a h4 {
+  font-size: 1, 2em;
+}
+
+.mi-cuenta {
+  padding: 3px 30px;
+  display: grid;
+  justify-items: center;
+}
+.mi-cuenta button {
+  border: none;
+  padding: 10px;
+  color: orange;
+  background-color: black;
+  border-radius: 3px;
+  width: 10px auto;
+  margin: 10px;
+}
+.mi-cuenta button:hover {
+  cursor: pointer;
+  background-color: gray;
+}
+.mi-cuenta label {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  line-height: 1, 2em;
+}
+.mi-cuenta form {
+  padding: 5px 30px;
+}
+.mi-cuenta input {
+  padding-top: 20px;
+  padding-left: 30px;
+  line-height: 1, 4em;
+  border-radius: 3px;
+  border: 1px;
+  background-color: rgb(255, 255, 255);
+}
+
+.contenedor-grid {
+  background: linear-gradient(to top, rgb(219, 183, 121), white);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  justify-items: center;
+  height: 350px;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  text-align: center;
+}
+
+.registro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  width: 400px;
+  height: 200px;
+}
+
+@media (width < 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  .viplist {
+    flex-direction: column;
+  }
+  footer {
+    flex-direction: column;
+  }
+  h1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+  }
+  .logofooter {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+  .button-heroe button {
+    display: none;
+  }
+  .contenedor-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .contenedor-grid h2 {
+    display: flex;
+    justify-content: center;
+  }
+  .contenedor-grid label {
+    display: flex;
+    align-items: center;
+  }
+  svg {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

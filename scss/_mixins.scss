@@ -1,0 +1,29 @@
+//mixins
+
+@mixin textos ($size,$line,$color){
+    font-size: $size;
+    line-height: $line;
+    color:$color;
+    font-family:$mainFont;
+
+}
+
+p{
+    @include textos(1.1em,1.2em,black)
+}
+
+@mixin flex ($direction,$justify,$aligntxt,$wrap){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    text-align: $aligntxt;
+    flex-wrap: $wrap;
+}
+
+@mixin button ($border,$padding,$color,$backgraund,$radius){
+    border: $border;
+    padding: $padding;
+    color:$color;
+    background-color: $backgraund;
+    border-radius: $radius;
+}

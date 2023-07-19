@@ -1,0 +1,168 @@
+// selectores comunes a todo el proyecto
+*{
+    font-family: $mainFont;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+// nav
+nav {
+    padding: 3px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  
+    img {
+      width: 200px;
+      height: auto;
+    }
+  
+    ul {
+      list-style: none;
+      display: flex;
+      font-weight:600;
+      :hover{
+        transform: translateY(-3px);
+        transition: all 1s;
+    }
+    li {
+        a {
+          text-decoration: none;
+          color: $black;
+          font-size: $textMd;
+          padding-right: 10px;
+          padding-left: 10px;
+        }
+  
+        img {
+          width: 40px;
+          padding-right: 1px;
+          padding-left: 1px;
+        }
+      }
+    }
+  }
+
+// ends nav
+//header
+header img{
+    width: 100%;
+    }
+    .centered-button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(500%);
+        border: none;
+        background-color: $black;
+        border-radius: 3px;
+        padding: 1px 5px;
+      }
+      
+      .button-heroe {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        }
+//ends header      
+//main section
+main section{
+    padding: 3px 30px;
+}
+
+h1,
+h2,
+h3{
+    color:$black;
+    margin: 10px 0;
+    font-weight: 300;
+    font-size:$textXL;
+}
+
+p{
+    font-size: $textMd;
+    line-height:$textLg;
+    color: $mainColor ;
+    font-weight: 500;
+}
+.card-body{
+    text-align: center;
+    }
+.card-title {
+ font-size: $textMd;
+ color: $mainColor;
+ }
+ .card{
+    border-color: $white;
+    :hover{
+        transform: translate(4px, -4px);
+    }
+}
+
+.row{
+    margin: 10px;
+}
+
+.button-home{
+    @include button(none,6px,orange,black,3px);
+        width: 10px auto;
+        margin: 10px;
+    }
+    
+    .button-home:hover{
+    cursor: pointer;
+    background-color: gray;
+    }
+
+
+//ends main
+//foter
+footer{
+    background-color: $mainColor;
+    padding: 50px 30px;
+    display: flex;
+    justify-content: space-between;
+    div{
+        ul{
+            li{
+                a{
+                    text-decoration: none;
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+.footer{
+    text-decoration: none;
+    color: $white;
+}
+.footer-estilo{
+    list-style: none;
+}
+.logomask{
+    width: 200px;
+    height: auto;
+}
+
+.footer-redes{
+    width: 60px;
+    margin: 3px;
+    }
+.footer-micuenta{
+ line-height: 2.2;
+}
+
+.whatsapp{
+    position: fixed;
+    right: 80px;
+    bottom: 100px;
+}
+
+.whatsapp{
+    width: 60px;
+    height: 60px; 
+}
+//endfooter

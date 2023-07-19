@@ -1,0 +1,77 @@
+//headerpages
+
+.header-pages{
+    @include flex(column,center,center,wrap);
+    background-color: $mainColor;
+    width: 100%;
+    height: 130px;
+    font-size:$textSm;
+    }
+
+   .header-pages h1,h3{
+    color: white;
+    padding: 5px 30px;
+   }
+ .header-pages a h4{
+    font-size: $textLg;}
+//endheaderpages
+// pages mi cuenta
+.mi-cuenta{
+    padding: 3px 30px;
+    display: grid;
+    justify-items: center;
+    button{
+        @include button(none,10px,orange,black,3px);
+        width: 10px auto;
+        margin: 10px;
+     }    
+    button:hover{
+        cursor: pointer;
+        background-color: gray;
+    }
+    label{
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+        line-height:$textLg;
+    }
+    form{
+        padding: 5px 30px;
+    }
+    input{
+        padding-top: 20px;
+        padding-left: 30px;
+        line-height: $textXL;
+        border-radius: 3px;
+        border: 1px;
+        background-color:rgb(255, 255, 255)
+
+    }
+    }
+ .contenedor-grid {
+    background: linear-gradient( to top, rgb(219, 183, 121), white);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        justify-items: center;
+        height: 350px;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .title {
+        text-align: center;
+    }
+    
+    .registro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+        padding-bottom: 10px;
+        width: 400px;
+        height: 200px;
+        
+    }
+    //ends pages mi cuenta
